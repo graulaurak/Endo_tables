@@ -1,3 +1,15 @@
+*Center for Innovative Design and Analysis;
+*Analyst: Laura Grau, MPH;
+*Program: Endo_tables.sas;
+*Purpose: Create descriptive table for Pre/Post data for two groups;
+
+*Data format;
+*You should have a dataset with one observation per person;
+*For each measure, you should have three variables;
+*Pre = just the variable name (ie BMI, ALT, AST, etc);
+*Post= follow_up_*insert variable name* (ie follow_up_bmi, follow_up_alt, follow_up_ast);
+*Change= change_in_*insert variable name* (ie change_in_bmi, change_in_alt, change_in_ast);
+
 
 %macro univ(data=all, var=, classvar=, ndec=1,stat=mean std, order=);
 *check distributions;
